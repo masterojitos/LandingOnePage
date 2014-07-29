@@ -329,40 +329,22 @@ p {
 /*
     SUPER SLIDES
 */
- #slides .slides-container {
-    display: none;
-}
-#slides .scrollable {
-    *zoom: 1;
-    position: relative;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    height: 100%;
-}
-#slides .scrollable:after {
-    content:"";
-    display: table;
-    clear: both;
-}
 .slides-navigation {
-    margin: 0 auto;
-    position: absolute;
-    z-index: 3;
-    /*top: 46%;*/
-    bottom: 50px;
-    width: 100%;
+    margin: -30px auto;
     outline: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 3;
 }
 .slides-navigation a {
     position: absolute;
     display: block;
-    width: 56px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     text-align: center;
-    line-height: 50px;
-    font-size: 35px;
+    line-height: 60px;
+    font-size: 60px;
     background: #FFF;
     color: #1d2023;
     outline: 0;

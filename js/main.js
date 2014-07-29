@@ -3,18 +3,26 @@ var dp = jQuery;
 dp(document).ready(function() {
     //EXPANDING THUMBNAIL
     Grid.init();
-    // Superslides fullscreen slider
-    dp('#slides').superslides({
-        animation: 'fade', // Choose between slide or fade
-        play: 4000
+    
+    // Swiper fullscreen slider
+    var mySwiper = new Swiper('#slides', {
+        loop: true,
+        grabCursor: true
+//        pagination: '#slides .slides-pagination',
+//        paginationClickable: true,
     });
-    dp('#slides_cs').superslides({
-        animation: 'fade', // Choose between slide or fade
-        play: 4000,
-        pagination: false
+    $('#slides .prev').on('click', function(e) {
+        e.preventDefault();
+        mySwiper.swipePrev();
     });
+    $('#slides .next').on('click', function(e) {
+        e.preventDefault();
+        mySwiper.swipeNext();
+    });
+
     //BACK TO TOP
     dp("#backtotop").backToTop();
+    
     //PARALLAX
     dp('.bg-about').parallax("10%", 1);
     dp('.bg-skill').parallax("10%", 1);
