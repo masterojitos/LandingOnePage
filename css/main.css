@@ -1,5 +1,31 @@
 body {
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+.generatr-orange {
+    color: #fe9e1b;
+}
+.generatr-green {
+    color: #3fbeb2;
+}
+.section-title {
+    margin-top: 50px;
+    text-align: left;
+}
+.section-title .title {
+    font-size: 5em;
+}
+.section-title .title strong {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.section-outter, .section-outter > section, .section-outter > section > div {
+    height: 100%;
+}
+.section-outter p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .pipe {
@@ -17,6 +43,10 @@ body {
     color: #fff !important;
     font-size: 2em;
     padding: 20px 30px;
+}
+
+.btn-generatr.orange {
+    background-color: #fe9e1b;
 }
 .btn-generatr i {
     margin-left: 10px;

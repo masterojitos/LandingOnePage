@@ -633,6 +633,7 @@ p {
     SECTION FILL    
 */
  .section-fill {
+     padding: 0 100px;
 }
 .bg-parallax {
     background-size: cover !important;
