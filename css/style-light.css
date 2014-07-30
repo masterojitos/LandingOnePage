@@ -12,10 +12,6 @@ Text Domain: rindu
 BLUE: #4cddf3;
 */
 
-/* ======== IMPORT FONT ========== */
- @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
- @import url(http://fonts.googleapis.com/css?family=Raleway:900,300,700);
-
 /* ======== BOOTSTRAP STYLE ========= */
 
 /*
@@ -32,7 +28,7 @@ BLUE: #4cddf3;
     box-shadow: 0px 5px 39px -17px rgba(0, 0, 0, 0.4);
 }
 .navbar .navbar-brand {
-    font-family:'Raleway', sans-serif;
+    font-family:'Lato', sans-serif;
     padding: 18px 25px;
     padding-right: 30px;
     color:#FCFCFC;
@@ -193,7 +189,7 @@ html,body{
     height: 100%;
 }
 body {
-    font-family:'Roboto', sans-serif;
+    font-family:'Lato', sans-serif;
     color: #1d2023;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -435,9 +431,8 @@ p {
     color: #FFF;
 }
 .header-center h1 {
-    font-weight: 300;
-    font-size: 80px;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5.3em;
 }
 .header-center h1 span {
     font-weight: 700;
@@ -451,10 +446,11 @@ p {
     }
 }
 .header-center p {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.2em;
 }
-.header-center a {
+.header-center a.slider-more {
     color: #FFF;
     margin-top: 10%;
     width: 45px;
@@ -470,7 +466,7 @@ p {
     -webkit-border-radius: 100%;
     outline: 0;
 }
-.header-center a:hover {
+.header-center a.slider-more:hover {
     background: #25292c;
     border-color: #25292c;
     color: #4cddf3;
@@ -612,7 +608,7 @@ p {
     z-index: 2;
 }
 .section-title .title {
-    font-family:'Raleway', sans-serif;
+    font-family:'Lato', sans-serif;
     font-weight: 900;
     font-size: 40px;
     line-height: 60px;
@@ -1595,7 +1591,7 @@ p {
     }
 }
 .nav-tabs > li > a {
-    font-family:'Raleway', sans-serif;
+    font-family:'Lato', sans-serif;
     font-size: 16px;
     color: inherit;
     background: #e5e8eb;
