@@ -88,6 +88,7 @@ sizes, pagination, etc.
 }
 .swiper-slide {
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     position: relative;
