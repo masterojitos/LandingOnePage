@@ -336,7 +336,7 @@ p {
 .slides-navigation a {
     position: absolute;
     display: block;
-    width: 120px;
+    width: 8%;
     height: 60px;
     text-align: center;
     line-height: 60px;
@@ -432,23 +432,24 @@ p {
 }
 .header-center h1 {
     font-weight: 700;
-    font-size: 5.3em;
+    font-size: 60px;
 }
 .header-center h1 span {
     font-weight: 700;
 }
+.header-center p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
 @media(max-width: 768px) {
     .header-center h1 {
-        font-size: 30px;
+        font-size: 45px;
     }
     .header-center p {
-        display: none;
+        font-size: 20px;
+        line-height: 26px;
     }
-}
-.header-center p {
-    font-size: 2.5em;
-    font-weight: 400;
-    line-height: 1.2em;
 }
 .header-center a.slider-more {
     color: #FFF;

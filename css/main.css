@@ -6,14 +6,17 @@ body {
     color: #fe9e1b;
 }
 .generatr-green {
-    color: #3fbeb2;
+    color: #14ccb9;
+}
+.generatr-green-hover {
+    color: #00a695;
 }
 .section-title {
     margin-top: 50px;
     text-align: left;
 }
 .section-title .title {
-    font-size: 5em;
+    font-size: 60px;
 }
 .section-title .title strong {
     font-size: 1.2em;
@@ -24,7 +27,17 @@ body {
 }
 .section-outter p {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 700;
+}
+.section-outter dl dt {
+    color: #fff;
+    font-size: 30px;
+}
+.section-outter dl dd {
+    color: #fe9e1b;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -38,10 +51,10 @@ body {
 }
 
 .btn-generatr {
-    background-color: #3fbeb2;
+    background-color: #14ccb9;
     border: 0 none;
     color: #fff !important;
-    font-size: 2em;
+    font-size: 20px;
     padding: 20px 30px;
 }
 
@@ -54,6 +67,10 @@ body {
 .btn-generatr:hover {
     color: #fff !important;
     background-color: #00a695;
+}
+
+#about figure {
+    margin-top: 50px;
 }
 
 /*
@@ -103,7 +120,7 @@ body {
     -webkit-border-radius: 100%;
 }
 .navbar.navbar-default .navbar-nav>li>a {
-    background-color: #3fbeb2;
+    background-color: #14ccb9;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -174,6 +191,14 @@ body {
     outline: 0;
 }
 
+@media (max-width: 1366px) {
+    .section-outter p, .section-outter dl dd {
+        font-size: 20px;
+    }
+    .section-outter dl dt {
+        font-size: 23px;
+    }
+}
 @media (max-width: 1200px) {
     .navbar.navbar-default {
         padding: 20px;
@@ -193,6 +218,12 @@ body {
         font-size: 16px;
         padding: 10px 20px;
     }
+    .section-outter p, .section-outter dl dd {
+        font-size: 25px;
+    }
+    .section-outter dl dt {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 993px) {
@@ -203,7 +234,6 @@ body {
         margin: -23px auto;
     }
     .slides-navigation a {
-        width: 90px;
         height: 45px;
         line-height: 45px;
         font-size: 45px;
@@ -215,10 +245,24 @@ body {
         margin: -15px auto;
     }
     .slides-navigation a {
-        width: 60px;
         height: 30px;
         line-height: 30px;
         font-size: 30px;
+    }
+    .section-fill {
+        padding: 0 50px;
+    }
+    .section-title {
+        margin-top: 0;
+    }
+    .section-title .title {
+        font-size: 45px;
+    }
+    .section-outter p, .section-outter dl dd {
+        font-size: 20px;
+    }
+    .section-outter dl dt {
+        font-size: 23px;
     }
     footer.footer {
         padding: 15px 10px;
@@ -266,9 +310,6 @@ body {
     }
     .navbar-default .navbar-toggle .icon-bar+.icon-bar {
         margin-top: 3px;
-    }
-    .slides-navigation a {
-        width: 30px;
     }
     .footer-nav li.pipe {
         margin: 0 2px;

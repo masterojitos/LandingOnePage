@@ -67,6 +67,7 @@ Basic Swiper Styles
     margin: 0 auto;
 }
 .swiper-slide {
+    list-style: none;
     float: left;
 }
 
