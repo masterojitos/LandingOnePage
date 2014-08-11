@@ -2,6 +2,9 @@ body {
     font-family: 'Lato', sans-serif;
     overflow: hidden;
 }
+h1, h2, h3, h4, .white {
+    text-shadow: 1px 0 0 #000 !important;
+}
 .generatr-orange {
     color: #fe9e1b;
 }
@@ -17,6 +20,12 @@ body {
 }
 .section-title .title {
     font-size: 60px;
+    line-height: 80px;
+}
+.section-title .subtitle {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
 }
 .section-title .title strong {
     font-size: 1.2em;
@@ -71,6 +80,15 @@ body {
 
 #about figure {
     margin-top: 50px;
+}
+
+.teams .panel-heading {
+    background-color: #878C97;
+    text-align: center;
+}
+.teams .panel-footer {
+    background-color: #878C97;
+    text-align: center;
 }
 
 /*
