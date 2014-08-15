@@ -6,13 +6,22 @@ h1, h2, h3, h4, .white {
     text-shadow: 1px 0 0 #000 !important;
 }
 .generatr-orange {
-    color: #fe9e1b;
+    color: #fe9e1b !important;
 }
 .generatr-green {
-    color: #14ccb9;
+    color: #14ccb9 !important;
 }
 .generatr-green-hover {
-    color: #00a695;
+    color: #00a695 !important;
+}
+.generatr-bg-orange {
+    background-color: #fe9e1b !important;
+}
+.generatr-bg-green {
+    background-color: #14ccb9 !important;
+}
+.generatr-bg-green-hover {
+    background-color: #00a695 !important;
 }
 .section-title {
     margin-top: 50px;
@@ -82,9 +91,36 @@ h1, h2, h3, h4, .white {
     margin-top: 50px;
 }
 
+#pricing .col-md-4 {
+    padding: 0 50px;
+}
 .teams .panel-heading {
     background-color: #878C97;
     text-align: center;
+}
+.teams .panel-heading h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.teams .panel-body {
+    padding: 0;
+}
+.teams .panel-body td {
+    border: none;
+    color: #878C97;
+    font-size: 20px;
+    padding: 15px;
+}
+.teams .panel-body td.price {
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.teams .panel-body td.desc {
+    padding: 15px 30px;
 }
 .teams .panel-footer {
     background-color: #878C97;
