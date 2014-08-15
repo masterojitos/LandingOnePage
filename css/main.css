@@ -275,6 +275,7 @@ h1, h2, h3, h4, .white {
     }
     .section-title .title {
         font-size: 45px;
+        line-height: 60px;
     }
     .section-outter p, .section-outter dl dd {
         font-size: 20px;
@@ -301,6 +302,9 @@ h1, h2, h3, h4, .white {
     .navbar.navbar-default .navbar-nav>li>a {
         font-size: 14px;
         padding: 5px 15px;
+    }
+    .section-fill {
+        padding: 0 25px;
     }
     footer.footer {
        padding: 5px 10px;
