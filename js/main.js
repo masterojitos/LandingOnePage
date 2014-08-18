@@ -19,6 +19,19 @@ dp(document).ready(function() {
         e.preventDefault();
         mySwiper.swipeNext();
     });
+    
+    var price_Swiper = new Swiper('#price_slide', {
+        loop: true,
+        grabCursor: true
+    });
+    $('#price_slide .prev').on('click', function(e) {
+        e.preventDefault();
+        price_Swiper.swipePrev();
+    });
+    $('#price_slide .next').on('click', function(e) {
+        e.preventDefault();
+        price_Swiper.swipeNext();
+    });
 
     //BACK TO TOP
     dp("#backtotop").backToTop();

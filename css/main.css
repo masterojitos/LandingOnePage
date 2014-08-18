@@ -24,12 +24,13 @@ h1, h2, h3, h4, .white {
     background-color: #00a695 !important;
 }
 .section-title {
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: left;
 }
 .section-title .title {
     font-size: 60px;
     line-height: 80px;
+    margin-top: 0;
 }
 .section-title .subtitle {
     font-size: 30px;
@@ -88,11 +89,19 @@ h1, h2, h3, h4, .white {
 }
 
 #about figure {
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 #pricing .col-md-4 {
     padding: 0 50px;
+}
+#pricing #price_slide {
+    width: 600px;
+    height: 450px;
+}
+#pricing #price_slide .swiper-slide > div {
+    margin: 0 auto;
+    width: 80%;
 }
 .teams .panel-heading {
     background-color: #878C97;
@@ -312,6 +321,12 @@ h1, h2, h3, h4, .white {
     .section-title .title {
         font-size: 45px;
         line-height: 60px;
+    }
+    #pricing #price_slide {
+        height: 500px;
+        left: 0;
+        position: absolute;
+        width: 100%;
     }
     .section-outter p, .section-outter dl dd {
         font-size: 20px;
