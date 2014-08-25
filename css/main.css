@@ -5,6 +5,10 @@ body {
 h1, h2, h3, h4, .white {
     text-shadow: 1px 0 0 #000 !important;
 }
+strong {
+    font-size: 1.3em;
+    font-weight: 900;
+}
 .no-shadow {
     text-shadow: none !important;
 }
@@ -40,10 +44,6 @@ h1, h2, h3, h4, .white {
     line-height: 38px;
     font-weight: 700;
 }
-.section-title .title strong {
-    font-size: 1.2em;
-    font-weight: 900;
-}
 .section-outter, .section-outter > section, .section-outter > section > div {
     height: 100%;
 }
@@ -78,12 +78,10 @@ h1, h2, h3, h4, .white {
     color: #fff !important;
     font-size: 20px;
     padding: 20px 30px;
+    transition: all .2s ease-in-out;
 }
 .btn-generatr2 {
     padding: 20px 50px;
-}
-.btn-generatr.orange {
-    background-color: #fe9e1b;
 }
 .btn-generatr i {
     margin-left: 10px;
@@ -92,8 +90,11 @@ h1, h2, h3, h4, .white {
     color: #fff !important;
     background-color: #00a695;
 } 
+.btn-generatr.orange {
+    background-color: #fe9e1b;
+}
 .btn-generatr.orange:hover {
-    background-color: #A4A8A5;
+    background-color: #e88402;
 } 
 
 #about figure {
@@ -279,10 +280,10 @@ h1, h2, h3, h4, .white {
 }
 
 @media (max-width: 1366px) {
-    .section-outter p, .section-outter dl dd {
+    .section-outter #about p, .section-outter #about dl dd, .section-outter #price p, .section-outter #price dl dd {
         font-size: 20px;
     }
-    .section-outter dl dt {
+    .section-outter #about dl dt, .section-outter #price dl dt {
         font-size: 23px;
     }
 }
@@ -305,10 +306,10 @@ h1, h2, h3, h4, .white {
         font-size: 16px;
         padding: 10px 20px;
     }
-    .section-outter p, .section-outter dl dd {
+    .section-outter #about p, .section-outter #about dl dd, .section-outter #price p, .section-outter #price dl dd {
         font-size: 25px;
     }
-    .section-outter dl dt {
+    .section-outter #about dl dt, .section-outter #price dl dt {
         font-size: 30px;
     }
 }
@@ -352,10 +353,10 @@ h1, h2, h3, h4, .white {
         position: absolute;
         width: 100%;
     }
-    .section-outter p, .section-outter dl dd {
+    .section-outter #about p, .section-outter #about dl dd, .section-outter #price p, .section-outter #price dl dd {
         font-size: 20px;
     }
-    .section-outter dl dt {
+    .section-outter #about dl dt, .section-outter #price dl dt  {
         font-size: 23px;
     }
     footer.footer {
