@@ -5,6 +5,9 @@ body {
 h1, h2, h3, h4, .white {
     text-shadow: 1px 0 0 #000 !important;
 }
+.no-shadow {
+    text-shadow: none !important;
+}
 .generatr-orange {
     color: #fe9e1b !important;
 }
@@ -76,7 +79,9 @@ h1, h2, h3, h4, .white {
     font-size: 20px;
     padding: 20px 30px;
 }
-
+.btn-generatr2 {
+    padding: 20px 50px;
+}
 .btn-generatr.orange {
     background-color: #fe9e1b;
 }
@@ -86,7 +91,10 @@ h1, h2, h3, h4, .white {
 .btn-generatr:hover {
     color: #fff !important;
     background-color: #00a695;
-}
+} 
+.btn-generatr.orange:hover {
+    background-color: #A4A8A5;
+} 
 
 #about figure {
     margin-top: 5px;
@@ -134,6 +142,22 @@ h1, h2, h3, h4, .white {
 .teams .panel-footer {
     background-color: #878C97;
     text-align: center;
+}
+#form_contact {
+    margin-top: 20px;
+}
+#form_contact .form-control {
+    background-color: #ebebeb;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 1.5em;
+}
+#form_contact .form-control-feedback {
+    color: #999;
+    font-size: 25px;
+    right: 20px;
+    margin-top: -13px;
+    top: 50%;
 }
 
 /*
