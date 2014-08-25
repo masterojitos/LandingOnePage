@@ -169,17 +169,6 @@ strong {
     box-shadow: none;
     padding: 30px;
 }
-.navbar-default .navbar-toggle {
-    background-color: #616874;
-    border-color: #424549;
-    margin: 0;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #424549;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
 .navbar.navbar-default .navbar-brand {
     background-color: transparent;
     font-family: arial;
@@ -206,6 +195,41 @@ strong {
     width: 55px;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
+}
+.navbar.navbar-default .navbar-toggle {
+    background-color: #616874;
+    border-color: transparent;
+    border-radius: 0;
+    display: inline-block !important;
+    float: right;
+    height: 60px;
+    margin: 0;
+    padding: 15px;
+}
+.navbar.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #424549;
+}
+.navbar.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 5px !important;
+    margin-top: 4px !important;
+}
+.navbar.navbar-default .navbar-header {
+    float: none;
+}
+.navbar.navbar-default .navbar-collapse.collapse {
+    display: none! important;
+    float: right;
+    margin-right: 15px !important;
+}
+.collapsing {
+    overflow: hidden;
+}
+.navbar.navbar-default .navbar-collapse.collapse.in {
+    display: block! important;
+}
+.navbar.navbar-default .navbar-nav {
+    display: inline-block !important;
 }
 .navbar.navbar-default .navbar-nav>li>a {
     background-color: #14ccb9;
@@ -329,6 +353,21 @@ strong {
 }
 
 @media (max-width: 767px) {
+    .navbar.navbar-default .navbar-collapse.collapse {
+        clear: both;
+        float: left;
+        padding: 0;
+        margin-right: 0 !important;
+        overflow: hidden;
+        width: 100%;
+    }
+    .navbar.navbar-default .navbar-nav {
+        margin: 0;
+        width: 100%;
+    }
+    .navbar.navbar-default .navbar-brand {
+        /*width: 90%;*/
+    }
     .slides-navigation {
         margin: -15px auto;
     }
@@ -398,16 +437,14 @@ strong {
     .navbar.navbar-default {
         padding: 15px;
     }
-    .navbar-default .navbar-toggle {
-        margin-top: 3px;
-        padding: 6px 8px;
+    .navbar.navbar-default .navbar-toggle {
+        height: 40px;
+        margin-top: 10px;
+        padding: 10px;
     }
-    .navbar-default .navbar-toggle .icon-bar {
-        height: 2px;
-        width: 17px;
-    }
-    .navbar-default .navbar-toggle .icon-bar+.icon-bar {
-        margin-top: 3px;
+    .navbar.navbar-default .navbar-toggle .icon-bar {
+        height: 3px !important;
+        margin-top: 3px !important;
     }
     .footer-nav li.pipe {
         margin: 0 2px;
