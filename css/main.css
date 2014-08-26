@@ -12,6 +12,10 @@ strong {
 .no-shadow {
     text-shadow: none !important;
 }
+.text-double {
+    font-size: 1.3em;
+    font-weight: 900;
+}
 .generatr-orange {
     color: #fe9e1b !important;
 }
@@ -96,6 +100,45 @@ strong {
 .btn-generatr.orange:hover {
     background-color: #e88402;
 } 
+
+#how_it_works {
+    height: 450px;
+    position: relative;
+}
+#how_it_works .col-md-3 {
+    padding: 0 20px;
+}
+#how_it_works #how_slide {
+    width: 500px;
+    height: 400px;
+}
+#how_it_works #how_slide .swiper-slide > div {
+    margin: 0 auto;
+    width: 80%;
+}
+.how-it-works {
+    height: 400px;
+    text-align: center;
+}
+.how-it-works h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.how-it-works div {
+    height: 150px;
+    line-height: 150px;
+}
+.how-it-works i {
+    font-size: 10em;
+}
+.how-it-works i.small {
+    font-size: 3em;
+}
+.how-it-works footer {
+    font-size: 25px;
+    margin-top: 30px;
+}
 
 #about figure {
     margin-top: 5px;
@@ -388,6 +431,12 @@ strong {
     }
     #pricing #price_slide {
         height: 500px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    #how_it_works #how_slide {
+        height: 450px;
         left: 0;
         position: absolute;
         width: 100%;

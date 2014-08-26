@@ -11,15 +11,28 @@ dp(document).ready(function() {
 //        pagination: '#slides .slides-pagination',
 //        paginationClickable: true,
     });
-    $('#slides .prev').on('click', function(e) {
+    $('#slides > nav .prev').on('click', function(e) {
         e.preventDefault();
         mySwiper.swipePrev();
     });
-    $('#slides .next').on('click', function(e) {
+    $('#slides > nav .next').on('click', function(e) {
         e.preventDefault();
         mySwiper.swipeNext();
     });
     
+    var how_Swiper = new Swiper('#how_slide', {
+        loop: true,
+        grabCursor: true
+    });
+    $('#how_slide .prev').on('click', function(e) {
+        e.preventDefault();
+        how_Swiper.swipePrev();
+    });
+    $('#how_slide .next').on('click', function(e) {
+        e.preventDefault();
+        how_Swiper.swipeNext();
+    });
+
     var price_Swiper = new Swiper('#price_slide', {
         loop: true,
         grabCursor: true
@@ -32,7 +45,7 @@ dp(document).ready(function() {
         e.preventDefault();
         price_Swiper.swipeNext();
     });
-
+    
     //BACK TO TOP
     dp("#backtotop").backToTop();
     
